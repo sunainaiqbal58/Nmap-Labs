@@ -1,24 +1,28 @@
-# 🔍 Service Version Detection
+# 🖥️ Operating System Detection
 
 ## Overview
 
-Service version detection identifies the applications and versions running on open ports.
+Nmap can estimate the operating system of a target device by analyzing network responses.
+
 ---
 
-## Detect Service Versions
+## Detect Operating System
 
 ```bash
-nmap -sV 192.168.1.10
+sudo nmap -O 192.168.1.10
 ```
-This command attempts to determine the version of services running on open ports.
----
-## Why It Is Useful
-
-- Identifies running services.
-- Helps understand the target system.
-- Supports network administration and security assessments.
+Administrative privileges are usually required for OS detection.
 
 ---
+
+## Benefits
+
+- Estimates the target operating system.
+- Helps understand the network environment.
+- Useful during network inventory and security assessments.
+
+---
+
 ## Summary
 
-Service detection provides additional information beyond open ports by identifying the software running on those ports.
+Operating system detection provides information that can help administrators understand the devices connected to a network.
